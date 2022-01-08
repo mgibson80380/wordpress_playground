@@ -1,14 +1,9 @@
 /*
-Theme Name: MatthewGibson
-Author: Matthew Gibson
-Author URI: https://matthewgibson.co.uk/
-Description: Matthew Gibson portfolio wordpress website template.
-Version: 0.1
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: matthewgibson
-Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
-
-Matthew Gibson WordPress Theme, (C) 2020 matthewgibson.co.uk
-Matthew Gibson is distributed under the terms of the GNU GPL.
+  Theme Name: Matthew Gibson Theme
+  Author: Matthew Gibson
+  Author URI: https://github.com/mgibson80380
 */
+
+/* This file only exists for the sake of WordPress recognizing our theme / theme name etc... */
+
+/* We do not include CSS here and also WordPress will not load this file on the front-end */
