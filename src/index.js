@@ -1,7 +1,9 @@
-import Person from './scripts/Person'
-import ExampleReactComponent from './scripts/ExampleReactComponent'
+import App from './scripts/App';
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const person1 = new Person("Brad")
-ReactDOM.render(<ExampleReactComponent />, document.querySelector("#render-react-example-here"))
+ReactDOM.render(
+    <App />, 
+    document.querySelector("#render-react-example-here")
+)
