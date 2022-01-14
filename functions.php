@@ -9,6 +9,9 @@ include get_template_directory() . '/inc/enqueue.php';
 /* Admin Functions */
 include get_template_directory() . '/inc/admin/menus.php';
 
+include get_template_directory() . '/inc/admin/gutenberg_block_categories.php';
+include get_template_directory() . '/inc/admin/acf_components.php';
+
 function boilerplate_add_support() {
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
@@ -29,3 +32,4 @@ add_action( 'rest_api_init', function () {
       'callback' => 'custom_wp_menu',
   ) );
 } );
+
