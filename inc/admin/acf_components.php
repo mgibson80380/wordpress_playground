@@ -29,6 +29,18 @@ function register_blocks() {
         ));
 
         acf_register_block(array(
+            'name'              => 'Projects',
+            'title'             => __('Projects'),
+            'description'       => __('A Projects block.'),
+            'render_template'   => get_template_directory() . '/inc/blocks/projects.php',
+            'category'          => 'mgblocks',
+            'icon'              => 'portfolio',
+            'mode'              => 'edit',
+            'keywords'          => array( 'projects', 'layout' ),
+            'post_'
+        ));
+
+        acf_register_block(array(
             'name'              => 'Trading View',
             'title'             => __('Trading View'),
             'description'       => __('A Trading View Chart Block.'),
