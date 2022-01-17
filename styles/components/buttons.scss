@@ -1,0 +1,19 @@
+/* BUTTONS */
+
+.btn {
+    @apply relative flex items-center justify-center px-8 py-3 text-base font-medium rounded-md md:py-4 md:text-lg md:px-10 w-fit;
+}
+
+.btn-primary-container {
+    @apply mt-5 sm:mt-8 sm:flex justify-start ;
+}
+
+.btn-primary {
+    @apply border border-papaya-400 z-20 text-white bg-transparent overflow-hidden;
+    @apply hover:before:translate-x-0;
+}
+
+.btn-primary:before {
+    @apply transition transform ease-in-out;
+    @apply content-[''] -z-10 box-border absolute border border-solid border-papaya-400 inset-0 bg-papaya-400 -translate-x-full;
+}

@@ -19585,7 +19585,7 @@ function Nav() {
   }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_headlessui_react__WEBPACK_IMPORTED_MODULE_1__["Disclosure"], {
     as: "nav",
-    className: "fixed w-full ".concat(scroll ? "bg-gray-800" : "")
+    className: "fixed w-full z-50 ".concat(scroll ? "bg-gray-800" : "")
   }, function (_ref) {
     var open = _ref.open;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {

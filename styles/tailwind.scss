@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TYPOGRAPHY */
+h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+    @apply tracking-tight font-extrabold;
+    @apply first-letter:bg-papaya-400 first-letter:px-4 first-letter:py-1 first-letter:text-white mb-4;
+}
+
+.subtitle {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl;
+    @apply sm:mt-5 sm:max-w-xl sm:mx-auto;
+    @apply md:max-w-2xl md:mt-5 md:mx-0;
+    @apply mt-3 text-gray-500 border-l border-gray-500 pl-4; 
+}
+
+
+/* BUTTONS */
+
+.btn {
+    @apply relative flex items-center justify-center px-8 py-3 text-base font-medium rounded-md md:py-4 md:text-lg md:px-10 w-fit;
+}
+
+.btn-primary-container {
+    @apply mt-5 sm:mt-8 sm:flex justify-start ;
+}
+
+.btn-primary {
+    @apply btn;
+    @apply border border-papaya-400 z-20 text-white bg-transparent overflow-hidden;
+    @apply hover:before:translate-x-0;
+}
+
+.btn-primary:before {
+    @apply transition transform ease-in-out;
+    @apply content-[''] -z-10 box-border absolute border border-solid border-papaya-400 inset-0 bg-papaya-400 -translate-x-full;
+}
+
+
+/* CONTAINERS */
+
+.main-container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid;
+}
+
+.hero-container {
+    @apply main-container pb-24 pt-32 md:py-52;
+}
+
+.component-container {
+    @apply main-container py-24 md:pb-24 md:pt-32 lg:py-52;
+}
+
+.services-container {
+    @apply main-container md:grid-cols-6 lg:grid-cols-3 gap-6 content-center;
+}

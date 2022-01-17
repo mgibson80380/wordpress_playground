@@ -33,7 +33,7 @@ function Nav() {
    }, [])
 
     return (
-        <Disclosure as="nav" className={`fixed w-full ${scroll ? "bg-gray-800" : ""}`}>
+        <Disclosure as="nav" className={`fixed w-full z-50 ${scroll ? "bg-gray-800" : ""}`}>
             {({ open }) => (
                 <>
                     <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -97,3 +97,4 @@ function Nav() {
 }
 
 export default Nav;
+

@@ -5,7 +5,7 @@ function register_blocks() {
     // check function exists
     if( function_exists('acf_register_block') ) {
         acf_register_block(array(
-            'name'              => 'hero',
+            'name'              => 'Hero',
             'title'             => __('Hero'),
             'description'       => __('A Hero block.'),
             'render_template'   => get_template_directory() . '/inc/blocks/hero.php',
@@ -17,14 +17,26 @@ function register_blocks() {
         ));
 
         acf_register_block(array(
-            'name'              => 'Tradong View',
+            'name'              => 'Services',
+            'title'             => __('Services'),
+            'description'       => __('A Services block.'),
+            'render_template'   => get_template_directory() . '/inc/blocks/services.php',
+            'category'          => 'mgblocks',
+            'icon'              => 'hammer',
+            'mode'              => 'edit',
+            'keywords'          => array( 'services', 'layout' ),
+            'post_'
+        ));
+
+        acf_register_block(array(
+            'name'              => 'Trading View',
             'title'             => __('Trading View'),
             'description'       => __('A Trading View Chart Block.'),
             'render_template'   => get_template_directory() . '/inc/blocks/trading-view.php',
             'category'          => 'mgblocks',
             'icon'              => 'chart-area',
             'mode'              => 'edit',
-            'keywords'          => array( 'hero', 'layout' ),
+            'keywords'          => array( 'chart', 'layout' ),
             'post_'
         ));
     }
