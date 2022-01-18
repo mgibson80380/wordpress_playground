@@ -27,6 +27,10 @@ h1 {
     @apply mt-5 sm:mt-8 sm:flex justify-start ;
 }
 
+.btn-secondary-container {
+    @apply sm:mt-8 lg:mt-16 sm:flex justify-center ;
+}
+
 .btn-primary {
     @apply btn;
     @apply border border-papaya-400 z-20 text-white bg-transparent overflow-hidden;
@@ -36,6 +40,17 @@ h1 {
 .btn-primary:before {
     @apply transition transform ease-in-out;
     @apply content-[''] -z-10 box-border absolute border border-solid border-papaya-400 inset-0 bg-papaya-400 -translate-x-full;
+}
+
+.btn-secondary {
+    @apply btn;
+    @apply border border-papaya-400 z-20 text-white bg-papaya-400 overflow-hidden;
+    @apply hover:before:translate-x-0 hover:border-gray-800;
+}
+
+.btn-secondary:before {
+    @apply transition transform ease-in-out;
+    @apply content-[''] -z-10 box-border absolute border border-solid border-gray-800 inset-0 bg-gray-800 -translate-x-full;
 }
 
 

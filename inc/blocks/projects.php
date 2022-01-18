@@ -15,16 +15,16 @@
     // create id attribute for specific styling
     $id = 'introduction-' . $block['id']; ?>
 
-    <section id="<?= $id ?>">
+    <section id="<?= $id ?>" class="bg-gradient-to-b from-gray-800 to-gray-500 pb-4">
         <main class="projects-container">
-            <div class="flex flex-col self-center pr-8 mb-10 md:mb-0 cursor-pointer">
+            <div class="flex flex-col self-center pr-8 mb-10 md:mb-0">
                 <h2 class="text-lg uppercase text-white mb-4 bg-papaya-400 py-2 px-4 font-extrabold w-fit"><?= $section_title; ?></h2>
-                <p class="text-gray-800 font-bold text-3xl md:text-5xl mb-4"><?= $heading ?></p>
+                <p class="text-white font-bold text-3xl md:text-5xl mb-4"><?= $heading ?></p>
                 <?php if($text) : ?>
                     <p class="subtitle w-1/2 lg:w-full"><?= $text ?></p>
                 <?php endif; ?>
             </div>
         </main>
-        <div id="projects" class=""></div>
+        <div id="projects" class="px-4"></div>
     </section>
 
